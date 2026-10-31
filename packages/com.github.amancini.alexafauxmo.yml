@@ -1,0 +1,40 @@
+title: Alexa Fauxmo
+iconUri: https://raw.githubusercontent.com/amancini/webos-alexa-fauxmo/main/ipk/app/largeicon.png
+manifestUrl: https://github.com/amancini/webos-alexa-fauxmo/releases/latest/download/com.github.amancini.alexafauxmo.manifest.json
+category: utility
+pool: main
+description: |
+  # Alexa Fauxmo
+
+  > Control your LG webOS TV with **Amazon Alexa** — no PC, no hub, no cloud.
+
+  A tiny service that runs **on the TV itself** and emulates a **Philips Hue v1
+  bridge**. Alexa discovers it natively over your LAN and can then control the TV
+  by voice. Written in dependency-free ES5 JavaScript so it runs on the old
+  `node` shipped with webOS.
+
+  ## What you can say
+
+  | Say to Alexa | Effect |
+  |---|---|
+  | "turn **TV** on / off" | screen on / off (TV stays reachable) |
+  | "set **TV** to 30%" | volume |
+  | "turn **Netflix** on" | launch Netflix |
+  | "turn **Disney** on" | launch Disney+ |
+  | "turn **Prime Video** on" | launch Prime Video |
+  | "turn **YouTube** on" | launch YouTube |
+  | "set **Channel** to 5%" | go to channel 5 |
+
+  After install, say *"Alexa, discover devices"*. The service autostarts on boot.
+  Set a room name via the `ROOM` variable in the config.
+
+  ## Notes
+
+  - Requires a **rooted** webOS TV (Homebrew Channel).
+  - "Off" = screen off (not standby) so Alexa can turn it back on; ~10–15 W idle.
+  - Channel is set as a percentage (5% = channel 5) — Hue only exposes on/off + brightness.
+
+  Source and documentation: https://github.com/amancini/webos-alexa-fauxmo
+
+funding:
+  github: [ amancini ]
